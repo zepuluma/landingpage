@@ -1,0 +1,102 @@
+/* styles for landing page */
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rahmen {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+border: 3px solid red;
+height: 95vh;
+width: 60vw;
+align-content: center;
+/* padding: 0px 10vw; */
+box-sizing: border-box;
+
+}
+
+.header {
+border: 3px solid blue;
+background-color: #1f2937;
+display: flex;
+justify-content: space-between;
+align-self: stretch; /* WICHTIG um den container auf die breite zu strecken! */
+flex-direction: row;
+flex: 0;
+color: #e5e7eb;
+padding: 0px 5vw;
+font-size: 18px;
+
+
+}
+
+
+.header-right {
+display: flex;
+
+}
+
+.content1 {
+display: flex;
+background-color: #1f2937;
+flex: auto;
+align-self: stretch;
+padding: 8vh 5vw;
+color: white;
+
+}
+
+.content1-left {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+
+.hero {
+font-size: 48px;
+color: #F9Faf8;
+font-weight: 900;
+
+}
+
+
+.content2 {
+    display: flex;
+    background-color: white;
+    flex: auto;
+    /* align-self: stretch; */
+    padding: 8vh 5vw;
+    
+}
+
+.content3 {
+    display: flex;
+    background-color: #e5e7eb;
+    flex: auto;
+    align-self: stretch;
+    padding: 8vh 5vw;
+    
+}
+
+.content4 {
+    display: flex;
+    background-color: white;
+    flex: auto;
+    align-self: stretch;
+    padding: 8vh 5vw;
+    
+}
+
+    
+
+.footer {
+    background-color: #1f2937;
+
+}
