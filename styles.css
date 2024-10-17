@@ -5,6 +5,7 @@ body {
     justify-content: center;
     background-color: gray;
     font-family: 'Roboto', sans-serif;
+    /* border: 3px solid blue; */
 }
 
 .rahmen {
@@ -12,33 +13,50 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
-border: 3px solid red;
+/* border: 3px solid red; */
 height: 95vh;
 width: 60vw;
-align-content: center;
+
+
 /* padding: 0px 10vw; */
 box-sizing: border-box;
 
 }
 
 .header {
-border: 3px solid blue;
+/* border: 3px solid blue; */
 background-color: #1f2937;
 display: flex;
 justify-content: space-between;
 align-self: stretch; /* WICHTIG um den container auf die breite zu strecken! */
 flex-direction: row;
-flex: 0;
+flex: auto;
 color: #e5e7eb;
-padding: 0px 5vw;
-font-size: 18px;
+padding: 15px 10vw;
+
+box-sizing: border-box;
 
 
 }
 
+.header-left {
+color: #f9faf8;
+font-size: 18px;
+
+}
 
 .header-right {
 display: flex;
+/* border: 2px solid orange; */
+gap: 20px;
+align-items: center;
+
+}
+
+
+.secondary {
+font-size: 12px;
+color: #e5e7eb;
 
 }
 
@@ -46,9 +64,21 @@ display: flex;
 display: flex;
 background-color: #1f2937;
 flex: auto;
-align-self: stretch;
-padding: 8vh 5vw;
+align-self: stretch; /* sehr wichtig: passt die größe des containers auf der querachse (hier horizontal = width) dem parent container an (der hier vertikal verläuft, da flex-direction=column */
+padding: 8vh 10vw;
 color: white;
+justify-content: center; /* inhalt des containers zentrieren */
+box-sizing: border-box; /* für padding und margin leichter, weil immer gl größe */
+gap: 20px;
+
+}
+
+.button1 {
+    background-color: #3882f6;
+    color: #F9Faf8;
+    border-style: none;
+    border-radius: 3px;
+    padding: 10px 25px;
 
 }
 
@@ -56,11 +86,28 @@ color: white;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
+width: 50%;
+/* border: 3px solid yellow; */
+box-sizing: border-box;
+gap: 8px;
 
 }
 
+
+.content1-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* border: 3px solid yellow; */
+    box-sizing: border-box;
+    background-color: #a1a1a1
+        
+    }
+    
+
 .hero {
-font-size: 48px;
+font-size: 40px;
 color: #F9Faf8;
 font-weight: 900;
 
@@ -71,9 +118,59 @@ font-weight: 900;
     display: flex;
     background-color: white;
     flex: auto;
-    /* align-self: stretch; */
-    padding: 8vh 5vw;
+    align-self: stretch;
+    padding: 8vh 10vw;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    gap: 20px;
+
+}
+
+.content2-header {
     
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.content2-infos {
+    
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+
+.infobox {
+    display: flex;
+    /* border: 1px solid gray; */
+    flex-direction: column;
+    max-width: 100px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */ 
+    text-align: justify;
+    text-align-last: center;
+    gap: 3px;
+    color: #868686;
+    font-size: 14px;
+    
+
+}
+
+img {
+width: 100px;
+height: 100px;
+border-radius: 4px;
+
 }
 
 .content3 {
@@ -81,8 +178,21 @@ font-weight: 900;
     background-color: #e5e7eb;
     flex: auto;
     align-self: stretch;
-    padding: 8vh 5vw;
-    
+    padding: 8vh 16vw;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+    flex-direction: column;
+    /* border: 3px solid red; */
+}
+
+cite {
+    align-self: flex-end;
+    font-weight: 500;
+
 }
 
 .content4 {
@@ -90,13 +200,52 @@ font-weight: 900;
     background-color: white;
     flex: auto;
     align-self: stretch;
-    padding: 8vh 5vw;
+    padding: 8vh 10vw;
+    justify-content: center;
+    box-sizing: border-box;
     
 }
 
+.blue-box {
+    display: flex;
+    background-color: #3882f6;
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.action-call {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.button2 {
+    background-color: #3882f6;
+    color: #F9Faf8;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    padding: 10px 25px;
+
+
+}
     
 
 .footer {
+    
+    display: flex;
     background-color: #1f2937;
+    flex: auto;
+    align-self: stretch;
+    padding: 25px 10vw;
+    justify-content: center;
+    box-sizing: border-box;
+    
 
 }
